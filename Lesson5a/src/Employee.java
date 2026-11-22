@@ -18,7 +18,7 @@ public class Employee{
     System.out.println("Employee Salary: " + salary);
    }
 
-   public final void work(){
+   public void work(){
      System.out.println("Employee Working");
    }
 
