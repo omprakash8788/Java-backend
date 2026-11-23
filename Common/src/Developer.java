@@ -1,14 +1,17 @@
-public class Developer extends  Employee{
-
-    private String programming =" programming";
+public class Developer extends Employee{
+     
+    private String programming;
 
     public Developer(int employeeId, String name, double salary, String programming){
-         super(employeeId, name, salary);
-         this.programming=programming;
+     super(employeeId, name, salary);
+
+     this.programming="Java";
 
     }
-    public void writeCode(){
-        System.out.println("Developer lan: " + programming);
+
+    @Override 
+    public void work(){
+        System.out.println(getName() +"Developer write code");
     }
 
 }

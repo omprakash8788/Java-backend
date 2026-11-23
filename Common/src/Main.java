@@ -1,21 +1,17 @@
-public class Main{
+public class Main {
     public static void main(String[] args) {
         
-        Developer developer = new Developer(1, "Raju", 54.00, "Java");
+        Employee[] employees = {
+            new Developer(1, "sadhu", 100.00, "Java"),
+            new Manager(2, "deepali", 100000.00, 6),
+            new Tester(3, "Rubi", 100.00, "QA")
 
+        };
 
-        Manager manager = new Manager(2, "Ravi", 10.00, "manage");
-
-    System.out.println("=============");
-
-    developer.displayDetails();
-    developer.writeCode();
-     
-        System.out.println("=============");
-
-        manager.displayDetails();
-        manager.managerActivity();
+        for(Employee employee : employees){
+            employee.displayDetails();
+            employee.work();
+        }
 
     }
-
 }
